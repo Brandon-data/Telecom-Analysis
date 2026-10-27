@@ -56,3 +56,15 @@ También puedes abrir el archivo `.ipynb` en GitHub y usar el botón **Open in C
 ## 🛠️ Herramientas
 
 Python, pandas, numpy, seaborn y matplotlib, en Jupyter Notebook.
+---
+
+## 🇬🇧 English summary
+
+**ConnectaTel Usage Analysis** is an exploratory data analysis of call and message usage for a telecom company operating in Mexico and Colombia. *(The notebook and its commentary are written in Spanish.)*
+
+- **Data:** 3 datasets: plans (2 rows), users (4,000) and usage (40,000 events).
+- **Cleaning:** replaced the `-999` age sentinel with the median, converted `?` in city to missing, flagged 40 impossible registration dates (year 2026) as NaT, and kept structural nulls in `duration`/`length`.
+- **Analysis:** summary statistics, histograms and boxplots, IQR outlier detection, and customer segmentation by age group and usage level.
+- **Key findings:** usage behavior is nearly identical across age groups and plans, so segmenting offers by age or plan alone would not capture real differences. 30 calls last exactly 120 minutes, suggesting a system cap.
+- **Tools:** Python, pandas, NumPy, seaborn, matplotlib.
+- **Run it:** open the notebook in Colab using the badge above and run all cells in order.
